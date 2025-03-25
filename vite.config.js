@@ -3,5 +3,10 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base:'/city-nav',
   plugins: [svelte()],
+  build: {
+    outDir:'docs',
+    emptyOutDir: true,
+  }
 })
